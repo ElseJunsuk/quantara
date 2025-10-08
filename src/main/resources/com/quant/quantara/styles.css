@@ -1,0 +1,151 @@
+@font-face {
+    font-family: "orbit";
+    src: url("/fonts/Orbit-Regular.ttf");
+}
+
+.root {
+    -fx-background-color: linear-gradient(to bottom right, #0c0c2e 0%, #1a1a3e 50%, #2d1b69 100%);
+}
+
+.top-label {
+    -fx-font-family: "orbit";
+    -fx-text-fill: #FFFFE6;
+    -fx-font-size: large;
+}
+
+.bottom-label {
+    -fx-font-family: "orbit";
+    -fx-text-fill: #FFFFE6;
+    -fx-font-size: large;
+}
+
+.date-label {
+    -fx-text-fill: #FFFFE6;
+    -fx-font-size: 12px;
+}
+
+.title-label {
+    -fx-text-fill: #FFFFE6;
+    -fx-font-size: 18px;
+}
+
+.summary-text {
+    -fx-fill: #F0FAF6;
+    -fx-font-size: 14px;
+}
+
+.glow-star {
+    -fx-effect: dropshadow(gaussian, #FFFFE6, 5, 0.5, 0, 0);
+}
+
+/* styles.css */
+.prompt-input {
+    -fx-font-family: "sans-serif";
+    -fx-background-color: #2d2942;
+    -fx-text-fill: #FFFFE6;
+    -fx-prompt-text-fill: #A0A0A0;
+    -fx-border-width: 1px;
+    -fx-border-color: rgba(58, 58, 58, 0.76);
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-padding: 10px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 20, 0.03, 8, 8);
+}
+
+.next-button {
+    -fx-background-color: rgba(51, 44, 89);
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 20, 0.03, -8, 8);
+    -fx-background-radius: 50 0 0 50;
+    -fx-border-color: transparent;
+    -fx-padding: 10;
+    -fx-alignment: center;
+    -fx-cursor: hand;
+    -fx-opacity: .4;
+}
+
+.next-button:hover {
+    -fx-background-color: rgba(51, 44, 89);
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 20, 0.03, -8, 8);
+}
+
+.next-button:pressed {
+    -fx-background-color: rgb(38, 33, 67);
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 20, 0.03, -8, 8);
+}
+
+.prev-button {
+    -fx-background-color: rgba(51, 44, 89);
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 20, 0.03, -8, 8);
+    -fx-background-radius: 0 50 50 0;
+    -fx-border-color: transparent;
+    -fx-padding: 10;
+    -fx-alignment: center;
+    -fx-cursor: hand;
+    -fx-opacity: .4;
+}
+
+.prev-button:hover {
+    -fx-background-color: rgba(51, 44, 89);
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 20, 0.03, -8, 8);
+}
+
+.prev-button:pressed {
+    -fx-background-color: rgb(38, 33, 67);
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 20, 0.03, -8, 8);
+}
+
+.info-box {
+    -fx-background-color: rgba(255, 255, 255, 0.9);
+    -fx-border-color: #cccccc;
+    -fx-border-radius: 5;
+    -fx-padding: 10;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 10, 0, 0, 0);
+}
+
+.label-title {
+    -fx-font-family: "orbit";
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-text-fill: #FFFFE6;
+    -fx-alignment: center-left;
+}
+
+/* 새로 추가된 스타일 */
+.statistics-window {
+    -fx-background-color: linear-gradient(to bottom right, #0c0c2e 0%, #1a1a3e 50%, #2d1b69 100%); /* 어두운 배경, 기존 그라디언트와 조화 */
+    -fx-border-width: 1px;
+    -fx-padding: 20px;
+}
+
+.label-value {
+    -fx-font-family: "orbit";
+    -fx-font-size: 14px;
+    -fx-text-fill: #F0FAF6;
+    -fx-alignment: left; /* 좌측 정렬 강화 */
+    -fx-wrap-text: true;
+    -fx-max-width: infinity; /* 창 크기에 따라 자유롭게 확장 */
+    -fx-min-width: 200.0; /* 최소 너비 고정, FXML의 minWidth와 일치 */
+    -fx-pref-width: 287.0; /* FXML의 prefWidth와 일치 */
+}
+
+.quantum-circuit-border {
+    -fx-background-color: rgba(45, 41, 66, 0.8);
+    -fx-border-color: rgba(255, 255, 230, 0.3);
+    -fx-border-width: 1px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-padding: 10px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 10, 0.1, 0, 0);
+    -fx-alignment: center;
+    -fx-min-height: 200.0; /* 최소 높이 유지 */
+    -fx-min-width: 400.0; /* 최소 너비 추가 */
+    /* -fx-max-width: 400.0 제거 */
+}
+
+.qubit {
+    -fx-background-color: rgba(255, 255, 237, 0.3);
+    -fx-min-width: 0; /* 최소 너비 제한 해제 */
+    -fx-min-height: 0; /* 최소 높이 제한 해제 */
+    -fx-max-width: infinity; /* 최대 너비 제한 제거 */
+    -fx-max-height: infinity; /* 최대 높이 제한 제거 */
+}

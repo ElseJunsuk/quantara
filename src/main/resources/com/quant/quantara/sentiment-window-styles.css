@@ -1,0 +1,78 @@
+@font-face {
+    font-family: "orbit";
+    src: url("/fonts/Orbit-Regular.ttf");
+}
+
+.root {
+    -fx-font-family: "orbit";
+    -fx-background-color: linear-gradient(to bottom right, #0c0c2e 0%, #1a1a3e 50%, #2d1b69 100%);
+    -fx-text-background-color: #FFFFE6;
+    -fx-font-size: 15pt;
+}
+
+.title-label {
+    -fx-font-size: 20pt;
+    -fx-font-weight: bold;
+    -fx-text-fill: #FFFFE6;
+}
+
+.scroll-pane {
+    -fx-background-color: transparent;
+    -fx-border-color: #FFFFE6;
+    -fx-border-width: 1px;
+}
+
+.scroll-pane .viewport {
+    -fx-background-color: transparent;
+}
+
+.sentiment-list {
+    -fx-background-color: transparent;
+    -fx-control-inner-background: transparent;
+}
+
+.sentiment-list .list-cell {
+    -fx-pref-height: 60px;
+    -fx-background-color: linear-gradient(to right, rgba(45, 27, 105, 0.8) 0%, rgba(26, 26, 62, 0.8) 100%);
+    -fx-border-color: #FFFFE6;
+    -fx-border-width: 0 0 1 0;
+    -fx-padding: 10px;
+    -fx-alignment: CENTER_LEFT;
+}
+
+.sentiment-list .list-cell:empty {
+    -fx-background-color: transparent;
+}
+
+.sentiment-list .list-cell:selected {
+    -fx-background-color: linear-gradient(to right, #2d1b69 0%, #1a1a3e 100%);
+}
+
+/* ProgressBar 스타일: 수치 시각화용 */
+.progress-bar {
+    -fx-accent: #4CAF50;  /* 기본 녹색 (양성 감정) */
+    -fx-background-color: rgba(255, 255, 230, 0.2);  /* 배경 투명 */
+    -fx-padding: 5px;
+}
+
+.progress-bar .bar {
+    -fx-background-color: linear-gradient(to right, #4CAF50 0%, #8BC34A 100%);
+    -fx-background-radius: 5px;
+}
+
+/*.progress-bar:negative .bar {  !* 음성 감정 시 빨강으로 변경 (컨트롤러에서 동적 클래스 적용) *!*/
+/*    -fx-background-color: linear-gradient(to right, #F44336 0%, #E57373 100%);*/
+/*}*/
+
+/* 카드 내 Label 스타일 */
+.sentiment-card-label {
+    -fx-text-fill: #FFFFE6;
+    -fx-font-size: 13pt;
+    -fx-padding: 5px;
+}
+
+.sentiment-card-value {
+    -fx-text-fill: #FFFFE6;
+    -fx-font-size: 12pt;
+    -fx-font-weight: bold;
+}

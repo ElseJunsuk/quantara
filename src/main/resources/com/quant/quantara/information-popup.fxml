@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+<VBox xmlns="http://javafx.com/javafx/21.0.8" xmlns:fx="http://javafx.com/fxml/1" stylesheets="@styles.css"
+      styleClass="info-box" spacing="5" prefWidth="200" prefHeight="150">
+    <Label fx:id="wordName" styleClass="label-title"/>
+    <Label fx:id="wordType"/>
+    <Label fx:id="emotionScore"/>
+    <Label fx:id="emotionMagnitude"/>
+    <Label fx:id="sentenceVisibility"/>
+</VBox>

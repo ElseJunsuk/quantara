@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.quant.quantara.external.ui.component.ConstellationPane?>
+<?import com.quant.quantara.external.ui.component.NextButton?>
+<?import com.quant.quantara.external.ui.component.NextPrevBtnBorder?>
+<?import com.quant.quantara.external.ui.component.PreviousButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.layout.*?>
+<StackPane prefHeight="768.0" prefWidth="1366.0" stylesheets="@styles.css"
+           xmlns="http://javafx.com/javafx/21.0.8" xmlns:fx="http://javafx.com/fxml/1"
+           fx:controller="com.quant.quantara.external.controller.ViewController"
+           fx:id="rootStackPane">
+
+    <NextPrevBtnBorder fx:id="slideButtons" prefHeight="200.0" prefWidth="200.0">
+        <left>
+            <PreviousButton prefWidth="50." prefHeight="100." mnemonicParsing="false" visible="false"
+                            BorderPane.alignment="CENTER" styleClass="prev-button"/>
+        </left>
+        <right>
+            <NextButton prefWidth="50." prefHeight="100." mnemonicParsing="false" visible="false"
+                        BorderPane.alignment="CENTER" styleClass="next-button"/>
+        </right>
+    </NextPrevBtnBorder>
+
+    <Group fx:id="topMenu" translateX="80.0" translateY="20.0" StackPane.alignment="TOP_LEFT">
+    </Group>
+
+    <!--    <Label fx:id="topLabelTop" styleClass="top-label" translateY="-335.0"/>-->
+    <!--    <Label fx:id="topLabelUnder" style="-fx-font-size: x-large" styleClass="top-label" translateY="-310.0"-->
+    <!--           StackPane.alignment="CENTER"/>-->
+
+    <ConstellationPane fx:id="selectedPane" maxHeight="550.0" maxWidth="1020.0">
+    </ConstellationPane>
+
+    <AnchorPane maxHeight="55.0" maxWidth="550.0">
+        <TextField fx:id="promptInput" promptText="당신의 이야기를 들려주세요" styleClass="prompt-input" translateY="250.0"
+                   AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0"
+                   AnchorPane.topAnchor="10.0"/>
+    </AnchorPane>
+</StackPane>

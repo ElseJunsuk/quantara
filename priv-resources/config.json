@@ -1,0 +1,9 @@
+{
+  "googleCloudKeyfilePath": "keyfile.json",
+  "uiWidth": 1366,
+  "uiHeight": 768,
+  "minPromptLength": 20,
+  "maxPromptLength": 2000,
+  "language": "ko",
+  "createConstellationTimeoutMilli": 60000
+}
